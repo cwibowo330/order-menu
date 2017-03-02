@@ -1,0 +1,116 @@
+.header {
+  background: #333;
+  border-radius: 3px;
+  position: relative;
+  height: 35px;
+  margin-top: 30px; }
+  .header h1 {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: -10px;
+    margin-left: 10px;
+    color: white;
+    font-size: 40px; }
+
+.items {
+  margin-top: 10px;
+  font-family: 'Nunito Sans', sans-serif;
+  height: 200px;
+  width: 100%;
+  border: 1px solid white;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer; }
+  .items .item {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    font-weight: 100;
+    position: relative; }
+    .items .item .price {
+      position: absolute;
+      top: 0;
+      width: 20%;
+      right: 5px;
+      background-color: #E93200;
+      color: white;
+      font-weight: 900;
+      padding: 3px;
+      text-align: center;
+      border-radius: 3px;
+      font-size: 12px; }
+    .items .item img {
+      width: 100%;
+      height: 100%; }
+    .items .item .qty {
+      background-color: #333;
+      position: absolute;
+      bottom: 5px;
+      left: 10px;
+      font-size: 12px;
+      padding: 5px;
+      color: white;
+      border-radius: 3px;
+      text-transform: uppercase; }
+    .items .item .desc {
+      background-color: #333;
+      position: absolute;
+      bottom: 5px;
+      right: 10px;
+      font-size: 12px;
+      padding: 5px;
+      color: white;
+      border-radius: 3px;
+      text-transform: uppercase; }
+
+#checkout {
+  position: relative; }
+  #checkout img {
+    position: absolute;
+    bottom: -10px;
+    right: 10%;
+    width: 100px; }
+
+#checkout-wrap {
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: #E8E8E8 #D2D2D2 #C3C3C3 #D2D2D2;
+  margin-top: 10px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bold;
+  padding: 20px 0;
+  font-size: 12px; }
+  #checkout-wrap .item-desc, #checkout-wrap .total-desc {
+    display: inline-block;
+    text-transform: uppercase;
+    width: 50%;
+    padding-left: 20px; }
+  #checkout-wrap .item-price, #checkout-wrap .total-price {
+    display: inline-block;
+    text-transform: uppercase;
+    border-left: 1px solid #E8E8E8;
+    width: 30%;
+    padding-left: 20px; }
+
+.total-desc, .total-price {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 25px;
+  font-weight: 900;
+  text-transform: lowercase;
+  margin-top: 20px; }
+
+.total-desc {
+  display: inline-block;
+  width: 50%;
+  padding-left: 20px; }
+
+.total-price {
+  display: inline-block;
+  border-left: 1px solid #E8E8E8;
+  width: 30%;
+  padding-left: 20px; }
